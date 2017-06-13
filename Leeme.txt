@@ -11,9 +11,14 @@ Los nuevos usuarios, bajo la modalidad HIBRIDO, se almacenan en la base de datos
 
 Migración JSON a Base de datos. 
 ================================
-Se podrán migrar los usuarios del JSON a la nueva base de datos con la que funciona Kronos, accediendo al script migrar_jsontobd.php
+Se podrán migrar los usuarios del JSON a la nueva base de datos con la que funciona Kronos, accediendo al script migrar_jsontobd.php del directorio raíz.
 Una vez ejecutado, se observará la cantidad de registros convertidos. 
 Recomendamos eliminar este archivo del servidor una vez que haya sido utilizado, por razones de seguridad.
+
+
+Script Restaurar BD. 
+================================
+Ver el archivo restaurar_bd.php del directorio raíz, en él se incluyen comentarios importantes.
 
 
 Recuperar contraseña. 
