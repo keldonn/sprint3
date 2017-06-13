@@ -1,8 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `kronos2` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `kronos2`;
+CREATE DATABASE  IF NOT EXISTS `kronos` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `kronos`;
 -- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: kronos2
+-- Host: 127.0.0.1    Database: kronos
 -- ------------------------------------------------------
 -- Server version	5.5.5-10.1.21-MariaDB
 
