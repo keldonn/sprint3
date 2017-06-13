@@ -1,0 +1,38 @@
+Kronos Sprint v3.0
+Nuevas funcionalidades:
+
+
+Retrocompatibilidad con JSON. 
+================================
+En las clases Usuario y Validación se agregó la propiedad "storage", en la que puede indicarse JSON, BASEDEDATOS, o HIBRIDO. 
+Por defecto lo dejaremos en HIBRIDO. De esta forma, podrán utilizar Kronos tanto los usuarios de la BD como los del JSON. 
+Los nuevos usuarios, bajo la modalidad HIBRIDO, se almacenan en la base de datos. 
+
+
+Migración JSON a Base de datos. 
+================================
+Se podrán migrar los usuarios del JSON a la nueva base de datos con la que funciona Kronos, accediendo al script migrar_jsontobd.php
+Una vez ejecutado, se observará la cantidad de registros convertidos. 
+Recomendamos eliminar este archivo del servidor una vez que haya sido utilizado, por razones de seguridad.
+
+
+Recuperar contraseña. 
+================================
+Resetea y envía una nueva contraseña al usuario. 
+Bajo la modalidad HIBRIDO lo hace así éste se encuentre en JSON o en la base de datos. 
+Requiere la configuración de un servidor de correo para funcionar con XAMPP en localhost (por ej. una cuenta de gmail): https://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost
+
+
+Recordar usuario.
+================================
+Bajo la modalidad HIBRIDO recuerda el usuario así éste se encuentre en JSON o en la base de datos.
+
+
+Login.
+================================
+Bajo la modalidad HIBRIDO es capaz de loguear usuarios de JSON así como de la base de datos. Además, en caso de ingresar una clave incorrecta, persiste el usuario, más allá de si éste se encuentra en JSON o en BD. 
+
+
+Cambio de contraseña.
+================================
+A diferencia del sprint2, ahora el usuario puede cambiar su contraseña en forma opcional (antes era obligatorio si quería editar datos del perfil). 
